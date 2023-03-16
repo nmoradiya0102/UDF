@@ -1,23 +1,25 @@
 #include <stdio.h>
 
-double cube(double num);
+
+ int cube(int num)
+{
+    return (num * num * num);
+    
+}
 
 int main()
 {
     int num;
-    double c;
+    int c;
     
     printf("Enter any number: ");
     scanf("%d", &num);
     
     c = cube(num);
 
-    printf("Cube of %d is %.2f", num, c); 
+    printf("Cube of the given number is %d", c); 
     
     return 0;
 }
 
-double cube(double num)
-{
-    return (num * num * num);
-}
+
